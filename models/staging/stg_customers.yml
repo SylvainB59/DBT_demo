@@ -7,6 +7,9 @@ models:
           tests:
             - not_null
             - unique
+            - relationships:
+                to: ref('stg_orders')
+                field: customer_id
         - name: customer_name
           tests:
             - not_null
