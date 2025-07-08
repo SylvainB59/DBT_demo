@@ -5,7 +5,7 @@ renamed as (
     SELECT
         id as order_id,
         customer as customer_id,
-        ordered_at,
+        ordered_at as order_date,
         store_id
     from source
 )

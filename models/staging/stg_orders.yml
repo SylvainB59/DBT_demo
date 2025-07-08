@@ -5,5 +5,7 @@ models:
       columns:
         - name: order_id
         - name: customer_id
-        - name: ordered_at
+        - name: order_date
+          tests:
+            - not_null
         - name: store_id
